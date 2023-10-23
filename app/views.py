@@ -6,3 +6,9 @@ class Index(View):
 
     def get(self, request):
         return render(request, self.template_name)
+    
+class Tag(View):
+    template_name = 'tag.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
