@@ -7,8 +7,14 @@ class Index(View):
     def get(self, request):
         return render(request, self.template_name)
     
-class Tag(View):
-    template_name = 'tag.html'
+class Account(View):
+    template_name = 'account.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
+    
+class Test(View):
+    template_name = 'test.html'
 
     def get(self, request):
         return render(request, self.template_name)

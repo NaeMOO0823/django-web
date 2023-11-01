@@ -5,5 +5,6 @@ app_name = 'app'
 
 urlpatterns = [
     path('', views.Index.as_view(), name='index'),
-    path('tag', views.Tag.as_view(), name='tag')
+    path('account', views.Account.as_view(), name='account'),
+    path('test', views.Test.as_view(), name='test')
 ]
