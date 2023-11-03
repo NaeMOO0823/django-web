@@ -18,3 +18,9 @@ class Test(View):
 
     def get(self, request):
         return render(request, self.template_name)
+    
+class Tetris(View):
+    template_name = 'tetris.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
